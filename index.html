@@ -4,10 +4,110 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Rubik:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>AGBA Maintenance page</title>
+    <style>
+        html, body {
+            height: 100%;
+            box-sizing: border-box;
+            margin: 0;
+        }
+        *, *:before, *:after {
+            box-sizing: inherit;
+        }
+        body{
+            background-color: #F8F6F4;
+            -webkit-font-smoothing: antialiased;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 14px;
+            color: #666666;
+            line-height: 1.5;
+        }
+        h1{
+            color: #333333;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 59px;
+        }
+        p{
+            padding: 8px 0;
+        }
+        .content{
+            width: 80%;
+            margin: 0 auto;
+        }
+        .text{
+            width: 100%;
+            text-align: center;
+        }
+        
+        .img{
+            width: 300px;
+            height: auto;
+            margin: 0 auto;
+        }
+        img{
+            width: 100%;
+            height: auto;
+        }
+        button{
+            align-items: center;
+            padding: 8px 16px;
+            gap: 8px;
+            background: #FF3B00;
+            border-radius: 50px;
+            border: none;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 19px;
+            color: #F4F4F4;
+            text-transform: capitalize;
+            font-family: 'Rubik', sans-serif;
+            cursor: pointer;
+        }
+        @media only screen and (min-width: 900px) {
+            body{
+                font-size: 1rem;
+            }
+            .content{
+                display: flex;
+                margin: 0 auto;
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            .text{
+                width: 40vw;
+                text-align: left;
+            }
+            .img{
+                width: 500px;
+                height: 500px;
+                margin: 0 auto;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>hello world</h1>
-    <p>:p</p>
+    <div class="content">
+        <div class="text">
+            <h1>Oops!</h1>
+            <p>We are temporarily unable to process transactions through the AGBA Money mobile app. Please click here for instructions on how to submit your transaction order. Thank you for your patience. Our apologies for any inconvenience.</p>
+            <p>我們暫時無法通過AGBA Money手機應用程序處理交易。如果你遇到困難，請按這裡下載表格以提交你的交易訂單。感謝你的耐心等待。對於任何不便，我們深表歉意。</p>
+            <p>我们暂时无法通过AGBA Money手机应用程序处理交易。如果你遇到困难，请按这里下载表格以提交你的交易订单。感谢你的耐心等待。对于任何不便，我们深表歉意。</p>
+            <button>Download</button>
+        </div>
+        <div class="img">
+            <img src="img.png" alt="disconnected">
+        </div>
+    </div>
+    
+    
 </body>
 </html>
