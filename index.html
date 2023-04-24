@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Rubik:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700;800&family=Rubik:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <title>AGBA Maintenance page</title>
     <style>
         html, body {
@@ -20,31 +20,34 @@
         body{
             background-color: #F8F6F4;
             -webkit-font-smoothing: antialiased;
-            font-family: 'Montserrat', sans-serif;
+            font-family: "Rubik", 'Noto Sans', Sans-serif;
             font-size: 14px;
-            color: #666666;
+            color: #6D6E71;
             line-height: 1.5;
-        }
-        h1{
-            color: #333333;
-            font-family: 'Montserrat';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 48px;
-            line-height: 59px;
+            text-decoration: none;
         }
         p{
             padding: 8px 0;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 28px;
+            letter-spacing: 0px;
+        }
+        #logo {
+            margin: 0 auto;
+            width: 200px;
+            object-fit: cover;
+             height: auto;
+            margin: 0 auto;
         }
         .content{
-            width: 80%;
-            margin: 0 auto;
+            width: 90%;
+            margin: 2rem auto;
         }
         .text{
             width: 100%;
             text-align: center;
         }
-        
         .img{
             width: 300px;
             height: auto;
@@ -55,24 +58,39 @@
             height: auto;
         }
         button{
+            text-decoration: none;
+            background: none;
+            border: none;
+            color: #F4F4F4;
+            font-style: normal;
+            font-size: 14px;
+            line-height: 19px;
+            cursor: pointer;
+            text-transform: capitalize;
+            font-family: "Rubik", Noto Sans, Sans-serif;
+        }
+        .button{
             align-items: center;
             padding: 8px 16px;
             gap: 8px;
+            background: #FF6C40;
+            border-radius: 36px 36px 36px 36px;
+        }
+        .button:hover{
             background: #FF3B00;
-            border-radius: 50px;
-            border: none;
-            font-style: normal;
-            font-weight: 500;
-            font-size: 14px;
-            line-height: 19px;
-            color: #F4F4F4;
-            text-transform: capitalize;
-            font-family: 'Rubik', sans-serif;
-            cursor: pointer;
         }
         @media only screen and (min-width: 900px) {
             body{
                 font-size: 1rem;
+                line-height: 1.25rem;
+            }
+            p {
+                font-size: 18px;
+                line-height: 30px;
+            }
+            #logo {
+                margin: inherit;
+                margin-left: -20px;
             }
             .content{
                 display: flex;
@@ -97,11 +115,13 @@
 <body>
     <div class="content">
         <div class="text">
-            <h1>Oops!</h1>
+            <div id="logo">
+                <img src="Money-Logo.png" alt="AGBA Money">
+            </div>
             <p>We are temporarily unable to process transactions through the AGBA Money mobile app. Please click here for instructions on how to submit your transaction order. Thank you for your patience. Our apologies for any inconvenience.</p>
             <p>我們暫時無法通過AGBA Money手機應用程序處理交易。如果你遇到困難，請按這裡下載表格以提交你的交易訂單。感謝你的耐心等待。對於任何不便，我們深表歉意。</p>
             <p>我们暂时无法通过AGBA Money手机应用程序处理交易。如果你遇到困难，请按这里下载表格以提交你的交易订单。感谢你的耐心等待。对于任何不便，我们深表歉意。</p>
-            <button>Download</button>
+            <a href="#" class="button"><button>Download</button></a>
         </div>
         <div class="img">
             <img src="img.png" alt="disconnected">
