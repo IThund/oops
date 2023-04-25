@@ -17,6 +17,10 @@
         *, *:before, *:after {
             box-sizing: inherit;
         }
+        p{
+            margin: 0;
+            padding-bottom: 16px;
+        }
         body{
             background-color: #F8F6F4;
             -webkit-font-smoothing: antialiased;
@@ -27,17 +31,19 @@
             text-decoration: none;
         }
         p{
-            padding: 8px 0;
-            font-size: 14px;
+            font-size: 15px;
             font-weight: 300;
-            line-height: 28px;
+            line-height: 24px;
             letter-spacing: 0px;
+        }
+        .detail {
+            padding: 16px 0;
         }
         #logo {
             margin: 0 auto;
-            width: 200px;
+            width: 150px;
             object-fit: cover;
-             height: auto;
+            height: auto;
             margin: 0 auto;
         }
         .content{
@@ -85,10 +91,11 @@
                 line-height: 1.25rem;
             }
             p {
-                font-size: 18px;
+                font-size: 16px;
                 line-height: 30px;
             }
             #logo {
+                width: 200px;
                 margin: inherit;
                 margin-left: -20px;
             }
@@ -118,9 +125,11 @@
             <div id="logo">
                 <img src="Money-Logo.png" alt="AGBA Money">
             </div>
-            <p>We are temporarily unable to process transactions through the AGBA Money mobile app. Please click here for instructions on how to submit your transaction order. Thank you for your patience. Our apologies for any inconvenience.</p>
-            <p>我們暫時無法通過AGBA Money手機應用程序處理交易。如果你遇到困難，請按這裡下載表格以提交你的交易訂單。感謝你的耐心等待。對於任何不便，我們深表歉意。</p>
-            <p>我们暂时无法通过AGBA Money手机应用程序处理交易。如果你遇到困难，请按这里下载表格以提交你的交易订单。感谢你的耐心等待。对于任何不便，我们深表歉意。</p>
+            <div class="detail">
+                <p>We are temporarily unable to process transactions through the AGBA Money mobile app. Please click here for instructions on how to submit your transaction order. Thank you for your patience. Our apologies for any inconvenience.</p>
+                <p>我們暫時無法通過AGBA Money手機應用程序處理交易。如果你遇到困難，請按這裡下載表格以提交你的交易訂單。感謝你的耐心等待。對於任何不便，我們深表歉意。</p>
+                <p>我们暂时无法通过AGBA Money手机应用程序处理交易。如果你遇到困难，请按这里下载表格以提交你的交易订单。感谢你的耐心等待。对于任何不便，我们深表歉意。</p>
+            </div>
             <a href="#" class="button"><button>Download</button></a>
         </div>
         <div class="img">
